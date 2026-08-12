@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IASP — International Air and Space Program</title>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/brand/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/brand/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/brand/apple-touch-icon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<div class="scan-progress" id="scanProgress"></div>
+
+<!-- ============================================================ -->
+<!-- SECTION NAV — indicador lateral de secci&oacute;n activa (desktop) -->
+<!-- ============================================================ -->
+<nav class="section-nav" aria-label="Secciones de la p&aacute;gina">
+  <a href="#briefing" class="section-nav__dot" data-target="briefing" aria-label="01 Crew Briefing"></a>
+  <a href="#archive" class="section-nav__dot" data-target="archive" aria-label="02 Mission Archive"></a>
+  <a href="#profile" class="section-nav__dot" data-target="profile" aria-label="03 Mission Profile"></a>
+  <a href="#activities-do" class="section-nav__dot" data-target="activities-do" aria-label="04 Mission Activities"></a>
+  <a href="#activities-learn" class="section-nav__dot" data-target="activities-learn" aria-label="05 Mission Curriculum"></a>
+  <a href="#manual" class="section-nav__dot" data-target="manual" aria-label="06 Flight Manual"></a>
+  <a href="#launch" class="section-nav__dot" data-target="launch" aria-label="07 Launch Sequence"></a>
+</nav>
+
+<!-- ============================================================ -->
+<!-- NAVBAR — minimalista, negro                                   -->
+<!-- ============================================================ -->
+<header class="navbar-min">
+  <div class="container navbar-min__inner">
+    <a href="/" class="navbar-min__brand">
+      <img src="assets/img/brand/aexa-logo.webp" alt="Imagen">
+    </a>
+
+    <nav class="navbar-min__nav">
+      <a href="/" class="navbar-min__link">Home</a>
+    </nav>
+
+    <div class="navbar-min__utils">
+      <a href="#" class="navbar-min__icon-btn" aria-label="Cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================ -->
+<!-- HERO                                                           -->
+<!-- ============================================================ -->
+<section class="hero-v2" style="background-image:url('assets/img/backgrounds/hero.webp');">
+  <div class="hero-v2__eyebrow">
+    <span>IASP 2027</span>
+    <span class="hero-v2__eyebrow-dates">07th - 13th NOVEMBER, 2027 &nbsp;&middot;&nbsp; (includes traves days) &nbsp;&middot;&nbsp; HOUSTON, TEXAS</span>
+  </div>
+
+  <div class="hero-v2__bottom">
+    <h1 class="hero-v2__title">INTERNATIONAL<br>AIR AND SPACE<br>PROGRAM</h1>
+    <p class="hero-v2__desc">The International Air and Space Program is a 7-day educational program that involves teamwork, problem-solving and communication, among students and expert NASA engineers to adapt and solve any unexpected problems.</p>
+
+    <div class="hero-v2__actions">
+      <a class="btn btn--gold" href="https://www.aexa.digital/ftpaexa/bigceo/register.php" target="_blank">
+        <span>REGISTER NOW</span>
+      </a>
+      <a href="https://aexa.biz/iasp-spa.html" target="_parent" class="hero-v2__lang-btn">
+        <i class="fa fa-language"></i>
+        <span>Versi&oacute;n en espa&ntilde;ol</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- TICKER — texto existente (IASP 2027 / fechas) en loop          -->
+<!-- ============================================================ -->
+<div class="ticker">
+  <div class="ticker__track" id="tickerTrack">
+    <span class="ticker__item"><strong>IASP 2027</strong> — 07th - 13th NOVEMBER, 2027 &middot; (includes traves days) &middot; HOUSTON, TEXAS —</span>
+    <span class="ticker__item"><strong>IASP 2027</strong> — 07th - 13th NOVEMBER, 2027 &middot; (includes traves days) &middot; HOUSTON, TEXAS —</span>
+    <span class="ticker__item"><strong>IASP 2027</strong> — 07th - 13th NOVEMBER, 2027 &middot; (includes traves days) &middot; HOUSTON, TEXAS —</span>
+    <span class="ticker__item"><strong>IASP 2027</strong> — 07th - 13th NOVEMBER, 2027 &middot; (includes traves days) &middot; HOUSTON, TEXAS —</span>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- CREW BRIEFING — qualifying questions + video                  -->
+<!-- ============================================================ -->
+<section class="briefing" id="briefing">
+  <span class="section-watermark" aria-hidden="true">01</span>
+  <span class="section-glow section-glow--blue" aria-hidden="true"></span>
+  <span class="section-glow section-glow--2 section-glow--white" aria-hidden="true"></span>
+  <div class="container">
+    <span class="section-tag reveal"><span class="section-tag__index">01</span><span class="section-tag__line"></span><span class="section-tag__label">Crew Briefing</span></span>
+    <h2 class="briefing__title reveal">DO YOU HAVE<br>WHAT IT TAKES?</h2>
+
+    <div class="briefing__grid">
+      <ol class="req-list">
+        <li class="req-list__item reveal" style="--i:0"><span class="req-list__icon"><i class="fa-solid fa-id-card"></i></span><span class="req-list__text">Are you between 15 to 25+ years old?</span></li>
+        <li class="req-list__item reveal" style="--i:1"><span class="req-list__icon"><i class="fa-solid fa-graduation-cap"></i></span><span class="req-list__text">Are you a current student?</span></li>
+        <li class="req-list__item reveal" style="--i:2"><span class="req-list__icon"><i class="fa-solid fa-chalkboard-user"></i></span><span class="req-list__text">Or will you be interested in attending as a mentor?</span></li>
+        <li class="req-list__item reveal" style="--i:3"><span class="req-list__icon"><i class="fa-solid fa-star"></i></span><span class="req-list__text">Are you interested in space?</span></li>
+        <li class="req-list__item reveal" style="--i:4"><span class="req-list__icon"><i class="fa-solid fa-user-astronaut"></i></span><span class="req-list__text">Do you want to experience a week like an astronaut?</span></li>
+        <li class="req-list__item reveal" style="--i:5"><span class="req-list__icon"><i class="fa-solid fa-rocket"></i></span><span class="req-list__text">Do you want to visit NASA facilities and send a project to the International Space Station?</span></li>
+      </ol>
+
+      <div class="video-frame reveal" style="--i:2">
+        <div class="video-frame__bar">
+          <span><span class="dot"></span>MISSION BRIEFING</span>
+          <span>WATCH</span>
+        </div>
+        <div class="video-wrap">
+          <iframe src="//www.youtube.com/embed/robdX2dqB_M?wmode=opaque" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- MISSION ARCHIVE — galer&iacute;a                               -->
+<!-- ============================================================ -->
+<section class="section section--archive" id="archive">
+  <span class="section-watermark" aria-hidden="true">02</span>
+  <span class="section-glow section-glow--white" aria-hidden="true"></span>
+  <div class="container">
+    <span class="section-tag reveal" style="width:fit-content;margin-left:auto;margin-right:auto;"><span class="section-tag__index">02</span><span class="section-tag__line"></span><span class="section-tag__label">Mission Archive</span></span>
+    <h2 class="wsite-content-title gallery-title reveal">GALLERY</h2>
+
+    <div class="gallery-track-wrap reveal" style="--i:1">
+      <div class="gallery-track" id="galleryTrack">
+        <img src="assets/img/gallery/img-7625.webp" alt="Picture">
+        <img src="assets/img/gallery/9.webp" alt="Picture">
+        <img src="assets/img/gallery/img-7762.webp" alt="Picture">
+        <img src="assets/img/gallery/img-3516.webp" alt="Picture">
+        <img src="assets/img/gallery/iaspsxg2019001_1.webp" alt="Picture">
+        <img src="assets/img/gallery/iasp2018001_1.webp" alt="Picture">
+        <img src="assets/img/gallery/3.webp" alt="Picture">
+        <img src="assets/img/gallery/iaspsxg2019002_1.webp" alt="Picture">
+        <img src="assets/img/gallery/iasp2015002_1.webp" alt="Picture">
+        <img src="assets/img/gallery/iaspsxg2019003_1.webp" alt="Picture">
+        <img src="assets/img/gallery/iasp2015003_1.webp" alt="Picture">
+        <img src="assets/img/gallery/iasp2015004_1.webp" alt="Picture">
+        <img src="assets/img/gallery/img-3410.webp" alt="Picture">
+        <img src="assets/img/gallery/img-5057.webp" alt="Picture">
+        <img src="assets/img/gallery/img-7813.webp" alt="Picture">
+        <img src="assets/img/gallery/4.webp" alt="Picture">
+        <img src="assets/img/gallery/5.webp" alt="Picture">
+        <img src="assets/img/gallery/6.webp" alt="Picture">
+        <img src="assets/img/gallery/7.webp" alt="Picture">
+        <img src="assets/img/gallery/8.webp" alt="Picture">
+        <img src="assets/img/gallery/1.webp" alt="Picture">
+        <img src="assets/img/gallery/2.webp" alt="Picture">
+      </div>
+    </div>
+
+    <div class="paragraph" style="text-align:center;"><strong>JOIN OUR COMMUNITY!</strong></div>
+    <div class="social-row">
+      <a href="https://www.facebook.com/Aexa.eduprograms/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/aexaprograms/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@aexaprograms" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://www.linkedin.com/company/18040065" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://twitter.com/aexa_tv" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.youtube.com/channel/UCmQULCC4pI3sawz9rSSSLDw/videos?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- MISSION PROFILE — patch + descripci&oacute;n del programa      -->
+<!-- ============================================================ -->
+<section class="profile" id="profile">
+  <span class="section-watermark" aria-hidden="true">03</span>
+  <span class="section-glow section-glow--gold" aria-hidden="true"></span>
+  <span class="section-glow section-glow--2 section-glow--blue" aria-hidden="true"></span>
+  <div class="container profile__grid">
+    <div class="profile__patch reveal">
+      <img src="assets/img/badges/mission-patch-2027.webp" alt="Picture">
+    </div>
+    <div class="profile__content reveal" style="--i:1">
+      <span class="section-tag"><span class="section-tag__index">03</span><span class="section-tag__line"></span><span class="section-tag__label">Mission Profile</span></span>
+      <h2 class="profile__title">international air and<br>space program 2027</h2>
+      <div class="date-block__dates" style="margin-top:0;">07th - 13th NOVEMBER, 2027<br>HOUSTON, TEXAS</div>
+      <p class="profile__desc">The IASP is a challenging 7-day educational program held in Houston, Texas. The students will work on a project that involves teamwork problem solving, and communication, among students and expert engineers of the aerospace industry to adapt &amp; solve any unexpected problems.<br><br>Registrations are open for students worldwide. Spaces are limited. Before the program, all registered students will have access to a series of online courses in the aerospace field so no previous knowledge is required to apply to the program.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- MISSION ACTIVITIES — WHAT AM I GOING TO DO?                   -->
+<!-- ============================================================ -->
+<section class="activities" id="activities-do">
+  <span class="section-watermark" aria-hidden="true">04</span>
+  <span class="section-glow section-glow--blue" aria-hidden="true"></span>
+  <div class="container">
+    <span class="section-tag reveal"><span class="section-tag__index">04</span><span class="section-tag__line"></span><span class="section-tag__label">Mission Activities</span></span>
+    <h2 class="activities__title reveal">WHAT AM I GOING TO DO?</h2>
+
+    <div class="activity-grid">
+      <div class="activity-grid__item reveal" style="--i:0"><span class="activity-grid__icon"><i class="fa-solid fa-user-astronaut"></i></span><span class="activity-grid__text">TRAIN LIKE AN ASTRONAUT</span></div>
+      <div class="activity-grid__item reveal" style="--i:1"><span class="activity-grid__icon"><i class="fa-solid fa-water"></i></span><span class="activity-grid__text">EXPERIENCE NEUTRAL BOUYANCY</span></div>
+      <div class="activity-grid__item reveal" style="--i:2"><span class="activity-grid__icon"><i class="fa-solid fa-plane"></i></span><span class="activity-grid__text">COMPLETE YOUR OWN PILOTING EXPERIENCE</span></div>
+      <div class="activity-grid__item reveal" style="--i:3"><span class="activity-grid__icon"><i class="fa-solid fa-cubes"></i></span><span class="activity-grid__text">MISSION CONTROL LEGO CHALLENGE</span></div>
+      <div class="activity-grid__item reveal" style="--i:4"><span class="activity-grid__icon"><i class="fa-solid fa-shield-halved"></i></span><span class="activity-grid__text">MISSION PATCH DESIGN</span></div>
+      <div class="activity-grid__item reveal" style="--i:5"><span class="activity-grid__icon"><i class="fa-solid fa-robot"></i></span><span class="activity-grid__text">LUNAR ROBOTICS BUILD TIME</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- MISSION CURRICULUM — WHAT AM I GOING TO LEARN!                -->
+<!-- ============================================================ -->
+<section class="activities" id="activities-learn">
+  <span class="section-watermark" aria-hidden="true">05</span>
+  <span class="section-glow section-glow--white" aria-hidden="true"></span>
+  <span class="section-glow section-glow--2 section-glow--gold" aria-hidden="true"></span>
+  <div class="container">
+    <span class="section-tag reveal"><span class="section-tag__index">05</span><span class="section-tag__line"></span><span class="section-tag__label">Mission Curriculum</span></span>
+    <h2 class="activities__title reveal">WHAT AM I GOING TO LEARN!</h2>
+
+    <div class="activity-grid">
+      <div class="activity-grid__item reveal" style="--i:0"><span class="activity-grid__icon"><i class="fa-solid fa-satellite"></i></span><span class="activity-grid__text">DISCOVER THE ROLE OF THE ISS</span></div>
+      <div class="activity-grid__item reveal" style="--i:1"><span class="activity-grid__icon"><i class="fa-solid fa-headset"></i></span><span class="activity-grid__text">FLIGHT CONTROL / TEAM ROLES</span></div>
+      <div class="activity-grid__item reveal" style="--i:2"><span class="activity-grid__icon"><i class="fa-solid fa-diagram-project"></i></span><span class="activity-grid__text">EXPLANATION OF EVA TASKS</span></div>
+      <div class="activity-grid__item reveal" style="--i:3"><span class="activity-grid__icon"><i class="fa-solid fa-flask"></i></span><span class="activity-grid__text">REVIEW EVA &amp; HABITAT SCIENCE TASK</span></div>
+      <div class="activity-grid__item reveal" style="--i:4"><span class="activity-grid__icon"><i class="fa-solid fa-shoe-prints"></i></span><span class="activity-grid__text">EVA WALKTROUGH</span></div>
+      <div class="activity-grid__item reveal" style="--i:5"><span class="activity-grid__icon"><i class="fa-solid fa-clipboard-check"></i></span><span class="activity-grid__text">EVA PRACTICE</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- FLIGHT MANUAL — FAQ + disclaimer                               -->
+<!-- ============================================================ -->
+<section class="manual" id="manual">
+  <span class="section-watermark" aria-hidden="true">06</span>
+  <span class="section-glow section-glow--blue" aria-hidden="true"></span>
+  <div class="container">
+    <span class="section-tag reveal"><span class="section-tag__index">06</span><span class="section-tag__line"></span><span class="section-tag__label">Flight Manual</span></span>
+    <h2 class="manual__title reveal">STILL HAVE QUIESTIONS?</h2>
+
+    <div class="manual__grid">
+      <section id="faqs" class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-question">1. How much does it cost? <span class="arrow"></span></button>
+          <div class="faq-answer"><p>$4,450 USD</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">2. How can I save my place? <span class="arrow"></span></button>
+          <div class="faq-answer"><p>You can save your place with a 500 USD advance, even if you finish paying on the indicated deadlines</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">3. What does the IASP include? <span class="arrow"></span></button>
+          <div class="faq-answer">
+            <ul>
+              <li>Registration to the competition</li>
+              <li>All materials</li>
+              <li>All activities</li>
+              <li>Accommodation during the days of the event</li>
+              <li>Transportation Airport - U.S Space &amp; Rocket Center - Airport and between all locations</li>
+              <li>Three meals a day and snacks</li>
+              <li>Accidental Medical insurance during the program</li>
+              <li>Graduation ceremony</li>
+              <li>24/7 Staff with the group</li>
+              <li>Launching and experiment into space for the winning team</li>
+              <li>Every participant at the IASP will receive a curricular value diploma and a personalized flight suit</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">4. What do I need to enroll in the program? <span class="arrow"></span></button>
+          <div class="faq-answer">
+            <p>To enroll in the program you must go through a selection process that you can start here</p>
+            <a href="https://www.aexa.digital/ftpaexa/bigceo/register.php" target="_blank">
+              <img src="assets/img/buttons/register-badge.webp" alt="Picture" style="width:147px;max-width:100%;">
+            </a>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">5. Cancellations and Refunds <span class="arrow"></span></button>
+          <div class="faq-answer">
+            <ul>
+              <li>Both student and parents agree that any cancellation and request for refund must be submitted in writing via email to octavio@aexa.biz.</li>
+              <li>Cancellation received.- Tuition less $500 non-refundable deposit</li>
+              <li>If the IASP gets canceled by AEXA fault students will be given the option to reschedule for a future IASP, or a full refund will be issued.</li>
+              <li>In the case, any activity or program gets canceled due to inclement weather or unsafe conditions no refunds will be issued.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="manual-figure reveal" style="--i:1">
+        <img src="assets/img/proposals/still-have-questions.webp" alt="Picture">
+      </div>
+    </div>
+
+    <p class="fine-print">
+      <strong>AEXA does not and shall not discriminate on the basis of race, color, religion, gender, gender expression, age, national origin, disability, marital status, sexual orientation, or military status, in any of its activities or operations.<br><br>AEXA disclaims the use of the NASA logo and name, mentions or opinions made by any of the participants in our educational programs before, during and after our educational events for any purpose.</strong>
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- LAUNCH SEQUENCE — CTA final                                    -->
+<!-- ============================================================ -->
+<section class="launch" id="launch">
+  <span class="section-watermark" aria-hidden="true">07</span>
+  <span class="section-glow section-glow--gold" aria-hidden="true"></span>
+  <span class="section-glow section-glow--2 section-glow--white" aria-hidden="true"></span>
+  <div class="container">
+    <span class="section-tag reveal"><span class="section-tag__index">07</span><span class="section-tag__line"></span><span class="section-tag__label">Launch Sequence</span></span>
+    <h2 class="launch__title reveal">TAKE THE CHALLENGE!</h2>
+
+    <div class="video-frame reveal" style="--i:1">
+      <div class="video-frame__bar">
+        <span><span class="dot"></span>MISSION COUNTDOWN</span>
+        <span>IASP 2027</span>
+      </div>
+      <div class="countdown-body">
+        <div class="date-block__dates" style="margin-top:0;">07th - 13th NOVEMBER, 2027<br>(includes traves days)<br>HOUSTON, TEXAS</div>
+        <a class="btn btn--gold" href="https://www.aexa.digital/ftpaexa/bigceo/register.php" target="_blank">
+          <span>REGISTER NOW</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="launch__grid">
+      <div class="reveal" style="--i:2">
+        <div class="brochure-list">
+          <div class="brochure-list__item">
+            <span class="brochure-list__text">BROCHUREs iasp 2027</span>
+            <a class="btn btn--gold btn--compact" href="https://public.app.basecamp.com/p/3gw8uJyZbqLLjeUXHjkoUDvN" target="_blank">
+              <span>REVIEW</span>
+            </a>
+          </div>
+          <div class="brochure-list__item">
+            <span class="brochure-list__text">brochures STUDENT SPONSORSHIP 2027</span>
+            <a class="btn btn--gold btn--compact" href="https://public.app.basecamp.com/p/STVk8K5kWkoi9nPdyfSSeDh4" target="_blank">
+              <span>REVIEW</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="social-row" style="text-align:left;">
+          <a href="https://www.facebook.com/Aexa.eduprograms/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/aexaprograms/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@aexaprograms" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://www.linkedin.com/company/18040065" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://twitter.com/aexa_tv" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.youtube.com/channel/UCmQULCC4pI3sawz9rSSSLDw/videos?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://wa.me/5215579661224" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:correo@aexa.biz" target="_blank"><i class="far fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="manual-figure reveal" style="--i:3">
+        <img src="assets/img/proposals/take-the-challenge.webp" alt="Picture">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- MISSION PARTNERS — sponsors                                    -->
+<!-- ============================================================ -->
+<section class="partners">
+  <div class="container">
+    <h2 class="wsite-content-title reveal" style="text-align:center;">Sponsors</h2>
+    <div class="partners__grid reveal" style="--i:1">
+      <a href="https://queretarodigital.queretaro.gob.mx/" target="_blank"><img src="assets/img/sponsors/queretaro.webp" alt=""></a>
+      <a href="https://queretarodigital.queretaro.gob.mx/" target="_blank"><img src="assets/img/sponsors/queretaro-2.webp" alt=""></a>
+      <a href="https://mooncolonizationprogram.com" target="_blank"><img src="assets/img/sponsors/mcp.webp" alt=""></a>
+      <a href="https://www.udem.edu.mx/es" target="_blank"><img src="assets/img/sponsors/udem.webp" alt=""></a>
+      <a href="https://www.instagram.com/flowet.biz?igsh=MTN6Y2I1YjNsc3NtbA%3D%3D&utm_source=qr" target="_blank"><img src="assets/img/sponsors/flowet.webp" alt=""></a>
+      <a href="https://houseofkau.com/" target="_blank"><img src="assets/img/sponsors/kau.webp" alt=""></a>
+      <a href="http://www.svnet.sv/" target="_blank"><img src="assets/img/sponsors/svnet.webp" alt=""></a>
+      <a href="http://facebook.com/ACMEJilotzingoOficial" target="_blank"><img src="assets/img/sponsors/acme.webp" alt=""></a>
+      <a href="https://www.moctezuma.com.mx/" target="_blank"><img src="assets/img/sponsors/moctezuma.webp" alt=""></a>
+      <a href="https://www.aogliving.com/" target="_blank"><img src="assets/img/sponsors/aog.webp" alt=""></a>
+      <a href="https://www.instagram.com/quantum.guy/" target="_blank"><img src="assets/img/sponsors/the-quantum-guy.webp" alt=""></a>
+      <a href="https://sedeju.puebla.gob.mx" target="_blank"><img src="assets/img/sponsors/sec-desarrollo-puebla.webp" alt=""></a>
+      <a href="https://secihti.puebla.gob.mx/" target="_blank"><img src="assets/img/sponsors/sec-ciencia-tecnologia.webp" alt=""></a>
+      <a href="https://www.facebook.com/share/1GaTt94E2H/?mibextid=wwXIfr" target="_blank"><img src="assets/img/sponsors/el-amigo-de-jilotzingo.webp" alt=""></a>
+      <a href="http://www.juanangelflores.com.mx/" target="_blank"><img src="assets/img/sponsors/juan-angel.webp" alt=""></a>
+      <a href="https://vpro.it/" target="_blank"><img src="assets/img/sponsors/vpro.webp" alt=""></a>
+      <a href="https://www.facebook.com/JafetSVoficial/" target="_blank"><img src="assets/img/sponsors/jafet.webp" alt=""></a>
+      <a href="https://elccologistics.com/" target="_blank"><img src="assets/img/sponsors/elcco.webp" alt=""></a>
+      <a href="https://www.niteo.app/" target="_blank"><img src="assets/img/sponsors/niteo.webp" alt=""></a>
+      <a href="https://www.morelia.gob.mx/" target="_blank"><img src="assets/img/sponsors/morelia.webp" alt=""></a>
+      <a href="https://xira.ai/" target="_blank"><img src="assets/img/sponsors/xira.webp" alt=""></a>
+      <a href="https://www.lasagnafactory.mx/" target="_blank"><img src="assets/img/sponsors/lasagna-factory.webp" alt=""></a>
+      <a href="https://share.google/1Yl77XJKxYSVh3fgb" target="_blank"><img src="assets/img/sponsors/lasalle.webp" alt=""></a>
+      <a href="https://liceosalvadoreno.edu.sv/home/" target="_blank"><img src="assets/img/sponsors/colegio-marista.webp" alt=""></a>
+      <a href="https://mjmarketingmx.com/" target="_blank"><img src="assets/img/sponsors/mj-marketing.webp" alt=""></a>
+      <a href="https://www.instagram.com/leonardo_maci?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img src="assets/img/sponsors/leonardo-macias.webp" alt=""></a>
+      <a href="https://www.instagram.com/saltillogob?igsh=MWY1eWU3cno1OHEzcQ==" target="_blank"><img src="assets/img/sponsors/saltillo.webp" alt=""></a>
+      <a href="https://www.uttn.edu.mx/" target="_blank"><img src="assets/img/sponsors/uttn.webp" alt=""></a>
+      <a href="https://www.upaep.mx/" target="_blank"><img src="assets/img/sponsors/upaep.webp" alt=""></a>
+      <a href="https://www.facebook.com/ruleelectricalservices/" target="_blank"><img src="assets/img/sponsors/rule-electrical.webp" alt=""></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- FOOTER — Ground Control                                        -->
+<!-- ============================================================ -->
+<footer class="ground-control">
+  <div class="container">
+    <span class="eyebrow eyebrow--center reveal">GROUND CONTROL</span>
+
+    <div class="ground-control__grid">
+      <div class="ground-control__col reveal">
+        <div class="ground-control__title">Contact us</div>
+        <p class="paragraph">Parque Lincoln, Anatole France 51, Polanco V Secci&oacute;n, CP 11560 CDMX. <br>Tel. 5579661224</p>
+      </div>
+
+      <div class="ground-control__col ground-control__col--center reveal" style="--i:1">
+        <img class="ground-control__logo" src="assets/img/brand/aexa-logo.webp" alt="Imagen">
+        <div class="social-row">
+          <a href="https://wa.me/5215579661224" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:correo@aexa.biz" target="_blank"><i class="far fa-envelope"></i></a>
+          <a href="https://www.tiktok.com/@aexaprograms" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://www.instagram.com/aexaprograms/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/Aexa.eduprograms/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.youtube.com/channel/UCmQULCC4pI3sawz9rSSSLDw/videos?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://twitter.com/aexa_tv" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/18040065" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="ground-control__col ground-control__col--right reveal" style="--i:2">
+        <div class="ground-control__title">Legal</div>
+        <p class="paragraph">&copy; Copyright 2026 | All Rights Reserved | <a href="#">Privacy Policy</a><br>Aplicaciones Extraordinarias Aeroespaciales AEXA SA de CV</p>
+        <p class="trademark">International Air and Space Program y AEXA are registered trademarks.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
