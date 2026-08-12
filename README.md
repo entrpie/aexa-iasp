@@ -2,7 +2,6 @@
 
 Prototipo visual de la página [aexa.biz/iasp.html](https://aexa.biz/iasp.html), construido como un ejercicio rápido de rediseño UI/UX con temática aeroespacial.
 
-**Importante:** este es un prototipo hecho con poco tiempo, así que no está tan pulido ni detallado como podría quedar la versión final. Es una exploración de dirección visual, no una implementación de producción. Con React + Vite (componentización, manejo de estado, mejor tooling de build) quedaría un resultado más sólido y mantenible; por ahora se construyó en HTML/CSS/JS planos, sin build step, para poder iterar rápido.
 
 Tampoco se conservaron las imágenes originales del sitio: se reemplazaron por otras porque las originales tenían poca calidad/resolución y no se veían bien en un layout a pantalla completa. Las nuevas se eligieron por resolución y por encajar temáticamente con cada sección.
 
